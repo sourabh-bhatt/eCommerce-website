@@ -11,30 +11,28 @@ export default function Exit() {
             </h1>
 
             {/*  */}
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 mt-1">
               <a href="/">
                 <div className="text-white font-[1000] font-[Helvetica] text-lg	">
                   <p className="flex ml-16 mt-5 text-orange-600">
-                    Thanks for shopping with eCom 🍃
+                    ...Thanks you so much :)
                   </p>
                 </div>
               </a>
             </div>
             {/*  */}
           </div>
-          <div>
-            <div className="mt-1">
-              <div
-                aria-hidden="true"
-                className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
-              >
-                <div className="absolute transform md:left-1/2 md:top-0 md:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8 ml-14">
-                  <img
-                    src={courier}
-                    alt="thanks note with a courier boy logo"
-                    className="h-full w-full object-cover object-center "
-                  />
-                </div>
+          <div className="mt-1">
+            <div
+              aria-hidden="true"
+              className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
+            >
+              <div className="absolute transform md:left-1/2 md:top-0 md:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8 ml-14">
+                <img
+                  src={courier}
+                  alt="thanks note with a courier boy logo"
+                  className="h-full w-full object-cover object-center mr-6 max-width: 50%"
+                />
               </div>
             </div>
           </div>
