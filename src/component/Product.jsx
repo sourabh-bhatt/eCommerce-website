@@ -3,6 +3,7 @@ import { useState } from "react";
 import product_data from "../data/prodData";
 import toast from "react-hot-toast";
 import { useCart } from "react-use-cart";
+import { Link } from "react-router-dom";
 const Product = (props) => {
   const { addItem, inCart } = useCart();
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -139,13 +140,13 @@ const Product = (props) => {
                   <div className="mt-4 flex justify-between">
                     <div>
                       <h3 className="text-sm text-gray-700">
-                        <a href={product.href}>
+                        <Link to={product.href}>
                           <span
                             aria-hidden="true"
                             className="absolute inset-0"
                           />
                           {product.category}
-                        </a>
+                        </Link>
                       </h3>
                       <p className="mt-1 text-sm text-gray-500">
                         {product.color}

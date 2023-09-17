@@ -4,6 +4,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 const AuthSection = () => {
   const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
 
+  console.log(isAuthenticated);
+
   return (
     <div className="md:flex  align-center justify-center md:items-center md:ml-7 hidden sm:block">
       {isAuthenticated ? (

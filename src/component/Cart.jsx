@@ -12,6 +12,7 @@ import {
   AiOutlineShopping,
 } from "react-icons/ai";
 import { useCart } from "react-use-cart";
+import { Link } from "react-router-dom";
 const Cart = () => {
   const {
     isEmpty,
@@ -28,14 +29,14 @@ const Cart = () => {
           <div className="w-fit flex flex-col   ">
             <AiOutlineShopping size={150} className="mx-7" />
             <h3 className="mx-2">No item added to your cart</h3>
-            <a href="/product">
+            <Link to="/product">
               <button
                 type="button"
                 className="flex items-center m-2 justify-center rounded-md border border-transparent bg-orange-700 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-500"
               >
                 Continue Shopping
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       )}
@@ -46,7 +47,7 @@ const Cart = () => {
             Shopping cart
           </div>
           <div className="ml-3 flex h-7 items-center ">
-            <a href="/modal">
+            <Link to="/modal">
               <button
                 type="button"
                 onClick={() => emptyCart()}
@@ -55,7 +56,7 @@ const Cart = () => {
                 <span className="absolute -inset-0.5" />
                 Remove All Items
               </button>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -76,9 +77,7 @@ const Cart = () => {
                     <div className="ml-4 flex flex-1 flex-col ">
                       <div>
                         <div className="flex justify-between text-base font-medium text-gray-900">
-                          <h3>
-                            <a>{product.title}</a>
-                          </h3>
+                          <h3>{product.title}</h3>
                           <p className="ml-4">
                             $
                             {`${(product.price * product.quantity).toFixed(2)}`}
@@ -149,17 +148,17 @@ const Cart = () => {
           </p>
         </div>
         <div className="mt-6">
-          <a
-            href="/checkout"
+          <Link
+            to="/checkout"
             className="flex items-center justify-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-500"
           >
             Checkout
-          </a>
+          </Link>
         </div>
         <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
           <p>
             or
-            <a href="/product">
+            <Link to="/product">
               <button
                 type="button"
                 className="ml-2 font-medium text-orange-600 hover:text-indigo-500"
@@ -167,7 +166,7 @@ const Cart = () => {
                 Continue Shopping
                 <span aria-hidden="true"> &rarr;</span>
               </button>
-            </a>
+            </Link>
           </p>
         </div>
       </div>

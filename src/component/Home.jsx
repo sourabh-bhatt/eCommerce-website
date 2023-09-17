@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import leaf from "../assets/leaf.png";
 
 export default function Home() {
@@ -26,81 +27,73 @@ export default function Home() {
               It's Time To Turn Over A New Leaf{" "}
               <img src={leaf} alt="Leaf logo" className="ml-1 w-6 " />
             </p>
+            <Link
+              to="/product"
+              className="inline-block rounded-md border border-transparent bg-orange-600 px-8 py-3 text-center font-medium text-white hover:bg-orange-700 mt-4"
+            >
+              Explore Now 🌿
+            </Link>
           </div>
-          <div>
-            <div className="mt-10">
-              <div
-                aria-hidden="true"
-                className="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl"
-              >
-                <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
-                  <div className="flex items-center space-x-6 lg:space-x-8">
-                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
+          <div className="mt-10">
+            <div className="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+              <div className="flex items-center space-x-6 lg:space-x-8">
+                <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                  <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
+                    <img
+                      src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg"
+                      alt=""
+                      className="h-full w-full object-cover object-center"
+                    />
+                  </div>
 
-                      <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                    </div>
-                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8 ">
-                      <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                    </div>
-                    <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
-                        <img
-                          src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
-                          alt=""
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                    </div>
+                  <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
+                    <img
+                      src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"
+                      alt=""
+                      className="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                </div>
+                <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8 ">
+                  <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
+                    <img
+                      src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg"
+                      alt=""
+                      className="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
+                    <img
+                      src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg"
+                      alt=""
+                      className="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
+                    <img
+                      src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg"
+                      alt=""
+                      className="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                </div>
+                <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                  <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
+                    <img
+                      src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg"
+                      alt=""
+                      className="h-full w-full object-cover object-center"
+                    />
+                  </div>
+                  <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
+                    <img
+                      src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg"
+                      alt=""
+                      className="h-full w-full object-cover object-center"
+                    />
                   </div>
                 </div>
               </div>
-
-              <a
-                href="/product"
-                className="inline-block rounded-md border border-transparent bg-orange-600 px-8 py-3 text-center font-medium text-white hover:bg-orange-700"
-              >
-                Explore Now 🌿
-              </a>
             </div>
           </div>
         </div>

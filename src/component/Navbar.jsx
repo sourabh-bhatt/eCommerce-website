@@ -8,6 +8,7 @@ import { Disclosure } from "@headlessui/react";
 import { useCart } from "react-use-cart";
 import eCom from "../assets/eCom.png";
 import AuthSection from "./AuthSection";
+import { Link } from "react-router-dom";
 
 // Navbar pagination
 const navigation = [
@@ -15,7 +16,6 @@ const navigation = [
   { name: "Products", href: "/product", current: false },
   { name: "About", href: "/about", current: false },
   { name: "Contact", href: "/contact", current: false },
-  { name: "AuthSection", href: "/authSection", current: false },
 ];
 const cartNavigation = [{ name: "Cart", href: "/cart", current: false }];
 
@@ -38,7 +38,7 @@ const Navbar = () => {
                 <div className="flex h-16 items-center">
                   <div className="w-full flex items-center justify-between">
                     <div className="flex-shrink-0">
-                      <a href="/">
+                      <Link to="/">
                         <div className="text-white font-[1000] font-[Helvetica] text-lg	">
                           <p className="flex ml-2">
                             <img
@@ -49,19 +49,18 @@ const Navbar = () => {
                             eCom
                           </p>
                         </div>
-                      </a>
+                      </Link>
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4 mr-2">
                         {navigation.map((item) => (
-                          <a
-                            key={item.name}
-                            href={item.href}
+                          <Link
+                            key={item.href}
+                            to={item.href}
                             className=" hover:bg-orange-400 text-white rounded-md px-3 py-2 text-sm font-medium"
-                            aria-current={item.current ? "page" : undefined}
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
@@ -72,7 +71,7 @@ const Navbar = () => {
                         type="button"
                         className="relative rounded-full bg-orange-900 border-2 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                       >
-                        <a href={cartNavigation[0].href}>
+                        <Link to={cartNavigation[0].href}>
                           <HiOutlineShoppingCart
                             className="h-6 w-6 "
                             aria-hidden="true"
@@ -82,7 +81,7 @@ const Navbar = () => {
                               {totalItems}
                             </span>
                           )}
-                        </a>
+                        </Link>
                       </button>
                     </div>
                   </div>
@@ -114,10 +113,9 @@ const Navbar = () => {
               <Disclosure.Panel className="md:hidden ">
                 <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                   {navigation.map((item) => (
-                    <Disclosure.Button
+                    <Link
                       key={item.name}
-                      as="a"
-                      href={item.href}
+                      to={item.href}
                       className={classNames(
                         item.current
                           ? "bg-gray-900 text-white"
@@ -127,7 +125,7 @@ const Navbar = () => {
                       aria-current={item.current ? "page" : undefined}
                     >
                       {item.name}
-                    </Disclosure.Button>
+                    </Link>
                   ))}
                 </div>
               </Disclosure.Panel>

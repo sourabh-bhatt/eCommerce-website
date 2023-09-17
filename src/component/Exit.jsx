@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import courier from "../assets/courier.png";
 
 export default function Exit() {
@@ -12,13 +13,13 @@ export default function Exit() {
 
             {/*  */}
             <div className="flex-shrink-0 mt-1">
-              <a href="/">
+              <Link to="/">
                 <div className="text-white font-[1000] font-[Helvetica] text-lg	">
                   <p className="flex ml-16 mt-5 text-orange-600">
                     ...Thanks you so much :)
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
             {/*  */}
           </div>
@@ -39,12 +40,12 @@ export default function Exit() {
         </div>
       </div>
       <div className="flex flex-row justify-center mt-9">
-        <a
-          href="/product"
+        <Link
+          to="/product"
           className="inline-block rounded-md border border-transparent bg-orange-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
         >
           Continue Shopping
-        </a>
+        </Link>
       </div>
     </div>
   );

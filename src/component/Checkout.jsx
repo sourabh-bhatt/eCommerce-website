@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useCart } from "react-use-cart";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -75,7 +76,7 @@ export default function Checkout() {
                 </span>
                 <input
                   class="rounded-md peer pl-12 pr-2 py-2 border-2 border-gray-200 placeholder-gray-300 block w-full  px-3.5  text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  type="text"
+                  type="number"
                   name="card_number"
                   placeholder="0000 0000 0000"
                   required
@@ -102,7 +103,7 @@ export default function Checkout() {
                 </span>
                 <input
                   class="rounded-md peer pl-12 pr-2 py-2 border-2 border-gray-200 placeholder-gray-300 block w-full  px-3.5  text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  type="text"
+                  type="date"
                   name="expire_date"
                   placeholder="MM/YY"
                   required
@@ -129,8 +130,9 @@ export default function Checkout() {
                 </span>
                 <input
                   class="rounded-md peer pl-12 pr-2 py-2 border-2 border-gray-200 placeholder-gray-300 block w-full  px-3.5  text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  type="text"
+                  type="password"
                   name="card_cvc"
+                  maxLength="3"
                   placeholder="&bull;&bull;&bull;"
                   required
                 />
@@ -278,7 +280,7 @@ export default function Checkout() {
               </div>
             </div>
             <div className="mt-10 ">
-              <a href="/exit">
+              <Link to="/exit">
                 <button
                   type="submit"
                   onClick={() => emptyCart()}
@@ -287,7 +289,7 @@ export default function Checkout() {
                   Submit
                   <span aria-hidden="true"> &rarr;</span>
                 </button>
-              </a>
+              </Link>
             </div>
           </form>
         </div>

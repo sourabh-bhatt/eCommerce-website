@@ -61,6 +61,26 @@ To run this project locally, follow these steps:
 
 You can access the live demo of this project at [E-Commerce Website Demo](https://ecommerce-frontend-website.vercel.app/).
 
+## Project Screenshots
+
+Take a visual tour of the E-Commerce website in action. We've captured the essence of the project in both desktop and mobile views to showcase its responsive design.
+
+**Desktop View:**
+
+![Desktop View](./src/assets/home-desktop.png)
+![Desktop View](./src/assets/products-desktop.png)
+![Desktop View](./src/assets/products-desktop.png)
+
+_Experience the full feature set and ease of navigation on larger screens._
+
+**Mobile View:**
+
+![Mobile View](images/mobile_screenshot.png)
+
+_Enjoy a seamless shopping experience on your mobile device, with a responsive layout._
+
+These screenshots provide a glimpse into the user-friendly design and functionality of the website, whether you're browsing from a desktop or a mobile device.
+
 ## Feedback and Contact
 
 I would love to hear your feedback on this project. Feel free to contact me on my socials:
