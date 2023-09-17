@@ -67,15 +67,49 @@ Take a visual tour of the E-Commerce website in action. We've captured the essen
 
 **Desktop View:**
 
+1. Home Page
+
 ![Desktop View](./src/assets/home-desktop.png)
+
+2. Products Page
+
 ![Desktop View](./src/assets/products-desktop.png)
-![Desktop View](./src/assets/products-desktop.png)
+
+3. Cart Page
+
+![Desktop View](./src/assets/cart-checkout.png)
+
+4. Checkout Page
+
+![Desktop View](./src/assets/checkout-desktop.png)
+
+5. Exit Page
+
+![Desktop View](./src/assets/thanks-desktop.png)
 
 _Experience the full feature set and ease of navigation on larger screens._
 
 **Mobile View:**
 
-![Mobile View](images/mobile_screenshot.png)
+1. Home Page
+
+![Mobile View](./src/assets/home-mobile.png)
+
+2. Products Page
+
+![Mobile View](./src/assets/products-mobile.png)
+
+3. Cart Page
+
+![Mobile View](./src/assets/cart-mobile.png)
+
+4. Checkout Page
+
+![Mobile View](./src/assets/checkout-mobile.png)
+
+5. Exit Page
+
+![Mobile View](./src/assets/thanks-mobile.png)
 
 _Enjoy a seamless shopping experience on your mobile device, with a responsive layout._
 
