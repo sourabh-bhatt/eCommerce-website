@@ -1,4 +1,5 @@
 import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 
 // Importing necessary libraries
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -6,6 +7,7 @@ import { HiOutlineShoppingCart } from "react-icons/hi";
 import { Disclosure } from "@headlessui/react";
 import { useCart } from "react-use-cart";
 import eCom from "../assets/eCom.png";
+import AuthSection from "./AuthSection";
 
 // Navbar pagination
 const navigation = [
@@ -13,6 +15,7 @@ const navigation = [
   { name: "Products", href: "/product", current: false },
   { name: "About", href: "/about", current: false },
   { name: "Contact", href: "/contact", current: false },
+  { name: "AuthSection", href: "/authSection", current: false },
 ];
 const cartNavigation = [{ name: "Cart", href: "/cart", current: false }];
 
@@ -21,6 +24,9 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
+  // Authenticating user
+  const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
+
   const { isEmpty, totalItems } = useCart();
   return (
     <>
@@ -80,6 +86,10 @@ const Navbar = () => {
                       </button>
                     </div>
                   </div>
+                  {/* auth */}
+                  <AuthSection />
+
+                  {/* Mobile */}
                   <div className="-mr-2 flex md:hidden">
                     {/* Menu for mobiles */}
                     <Disclosure.Button className="ml-3 relative inline-flex items-center justify-center rounded-md bg-orange-400 p-2 text-orange-100 hover:bg-orange-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">

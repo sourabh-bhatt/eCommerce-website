@@ -69,7 +69,7 @@ const Product = (props) => {
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         {/* Apply filters */}
         <div className="flex bg-orange-400 flex-col lg:flex-row justify-between">
-          <h2 className="text-2xl  font-bold tracking-tight text-white m-2">
+          <h2 className="text-2xl  font-bold tracking-tight text-white m-2 text-center">
             Apply Filters
           </h2>
           <div className="flex flex-col md:flex-row justify-between lg:gap-x-5 lg:space-x-5 md:my-2 text-xs md:text-base leading-4 ">
@@ -78,7 +78,7 @@ const Product = (props) => {
               onChange={handleCategoryChange}
               value={selectedCategory}
             >
-              <option className="font-light " value="">
+              <option className="font-light text-center " value="">
                 Categories
               </option>
               {[...new Set(product_data.map((c) => c.category))].map(
@@ -124,12 +124,11 @@ const Product = (props) => {
         </div>
 
         {/* Products Section */}
-
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {filteredProducts.map((product) => (
             <div>
-              <div key={product.id} className="group relative">
-                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80 ">
+              <div key={product.id} className="group relative w-200">
+                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                   <img
                     src={product.image}
                     alt={product.imageAlt}

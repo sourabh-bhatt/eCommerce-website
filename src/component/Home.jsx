@@ -43,9 +43,7 @@ export default function Home() {
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
-                      {/*  */}
 
-                      {/*  */}
                       <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100 shadow-lg shadow-orange-900 transform hover:scale-110 transition-transform duration-300">
                         <img
                           src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg"

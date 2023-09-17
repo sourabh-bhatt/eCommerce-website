@@ -1,3 +1,5 @@
+import { useAuth0 } from "@auth0/auth0-react";
+import AuthSection from "./component/AuthSection";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cart from "./component/Cart";
@@ -9,8 +11,8 @@ import About from "./component/About";
 import Contact from "./component/Contact";
 import Checkout from "./component/Checkout";
 import Exit from "./component/Exit";
-
 import { CartProvider } from "react-use-cart";
+
 function App() {
   return (
     <>
@@ -27,6 +29,7 @@ function App() {
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/exit" element={<Exit />} />
+              <Route path="/authSection" element={<AuthSection />} />
             </Routes>
           </div>
         </Router>
