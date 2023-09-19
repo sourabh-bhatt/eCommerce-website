@@ -1,6 +1,6 @@
 # E-Commerce Website
 
-Welcome to my E-Commerce website project. This web application was developed as part of the `TotalityCorp Frontend Challenge`. It is an intermediate-level e-commerce website built using React.js and Tailwind CSS.
+Welcome to my E-Commerce website project. It is an intermediate-level e-commerce website built using React.js and Tailwind CSS.
 
 ## Challenge Overview
 
